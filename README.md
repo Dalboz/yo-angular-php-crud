@@ -73,6 +73,7 @@ It's assumed in this tutorial that you have a MySQL database called `cars_demo` 
         'api/**'
     ]
     ```
+    For every ```<%= yeoman.app %>``` coincidence add ```<%= yeoman.app %>/app```
 
 1. Also, at `php.options`, add the base folder for our future php script to run from:
 
@@ -104,6 +105,8 @@ It's assumed in this tutorial that you have a MySQL database called `cars_demo` 
 1. Run `grunt serve` to ensure the PHP server is working (be mindful of [this issue](https://github.com/yeoman/generator-angular/issues/841))
 
 1. Go to `http://localhost:9000/#/cars` to check that the route renders.
+
+There is an issue with ```.bower_json``` being not looked at ```<%= yeoman.app %>/app````
 
 1. We'll come back to the front-end later.
 
